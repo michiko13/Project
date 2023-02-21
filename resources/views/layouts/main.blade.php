@@ -19,7 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{asset('css/sb-admin.min.css')}}" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -43,25 +43,41 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <div class="nav-link">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Dashboard</span></div>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
+
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEM"
+                    aria-expanded="true" aria-controls="collapseEM">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
+                    <span>Employee Management</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapseEM" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
+                        <h6 class="collapse-header">Custom Employee Management:</h6>
+                        <a class="collapse-item" href="buttons.html">Add New Employee</a>
+                        <a class="collapse-item" href="cards.html">Add New Roles</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDepartment"
+                    aria-expanded="true" aria-controls="collapseDepartment">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Department Management</span>
+                </a>
+                <div id="collapseDepartment" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Department:</h6>
+                        <a class="collapse-item" href="buttons.html">Add New Department</a>
+                        <a class="collapse-item" href="cards.html">Add New Position</a>
                     </div>
                 </div>
             </li>
@@ -295,8 +311,7 @@
     </a>
 
         <!-- Bootstrap core JavaScript-->
-        <script src="js/jquery.js"></script>
-        <script src="js/jquery.min.js"></script>
+        <script src="resources/js/app.js"></script>
 
         <!-- Custom scripts for all pages-->
         <script src="js/sb-admin.min.js"></script>
